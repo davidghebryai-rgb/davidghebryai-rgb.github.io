@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Recommendations</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 10px;
+            color: #1f2328;
+            font-size: 2.5em;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .recommendation {
+            background: white;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid #1f6feb;
+        }
+
+        .rec-header {
+            background: #f9f9f9;
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .rec-title {
+            font-size: 1.3em;
+            font-weight: 600;
+            color: #1f2328;
+        }
+
+        .rec-tag {
+            background: #1f6feb;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .rec-content {
+            padding: 30px;
+        }
+
+        .rec-content h3 {
+            color: #1f2328;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .rec-content p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .before, .after {
+            padding: 20px;
+            border-radius: 6px;
+            font-size: 0.95em;
+        }
+
+        .before {
+            background: #fff3cd;
+            border: 1px solid #ffc107;
+        }
+
+        .after {
+            background: #d4edda;
+            border: 1px solid #28a745;
+        }
+
+        .before h4, .after h4 {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .before h4 { color: #856404; }
+        .after h4 { color: #155724; }
+
+        code {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .impact {
+            margin-top: 15px;
+            padding: 15px;
+            background: #e7f3ff;
+            border-left: 3px solid #1f6feb;
+            border-radius: 4px;
+        }
+
+        .impact strong { color: #1f6feb; }
+
+        .priority {
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 3px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .priority.high {
+            background: #ffe0e0;
+            color: #c41e3a;
+        }
+
+        .priority.medium {
+            background: #fff4e0;
+            color: #ff9800;
+        }
+
+        .priority.low {
+            background: #e0f4ff;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Engineering Portfolio Recommendations</h1>
+        <p class="subtitle">Clean, professional suggestions to enhance your portfolio</p>
+
+        <!-- Recommendation 1 -->
+        <div class="recommendation">
+            <div class="rec-header">
+                <div class="rec-title">1. Hero Section Tagline</div>
+                <div class="rec-tag">HIGH PRIORITY</div>
+            </div>
+            <div class="rec-content">
+                <h3>Make the tagline more distinctive</h3>
+                <p>Your current tagline <code>"Precision Mechanics & Engineering Solutions"</code> is good but could be more specific and memorable for an engineering portfolio.</p>
+
+                <div class="comparison">
+                    <div class="before">
+                        <h4>Current</h4>
+                        <p>"Precision Mechanics & Engineering Solutions"</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #555;">✗ Generic, could apply to many firms</p>
+                    </div>
+                    <div class="after">
+                        <h4>Suggested</h4>
+                        <p>"Thermal & Structural Analysis | Mechanical Design"</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #155724;">✓ Specific to your expertise</p>
+                    </div>
+                </div>
+
+                <div class="impact">
+                    <strong>Impact:</strong> Immediately communicates your specialization to visitors. More professional for an engineering portfolio.
+                </div>
+
+                <div class="priority medium">MEDIUM PRIORITY</div>
+            </div>
+        </div>
+
+        <!-- Recommendation 2 -->
+        <div class="recommendation">
+            <div class="rec-header">
+                <div class="rec-title">2. Section Titles Typography</div>
+                <div class="rec-tag">MEDIUM PRIORITY</div>
+            </div>
+            <div class="rec-content">
+                <h3>Make section titles bolder/more prominent</h3>
+                <p>Section titles like "Selected Projects", "About Me", "Core Competencies" could have stronger visual hierarchy. Consider:</p>
+
+                <div class="comparison">
+                    <div class="before">
+                        <h4>Current</h4>
+                        <p>Medium font-weight, standard positioning</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #555;">✗ Could be more visually separated</p>
+                    </div>
+                    <div class="after">
+                        <h4>Suggested</h4>
+                        <p><strong>BOLDER font-weight (900)</strong><br/>
+                        Slight letter spacing</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #155724;">✓ More engineering-focused, cleaner look</p>
+                    </div>
+                </div>
+
+                <div class="impact">
+                    <strong>Impact:</strong> Better visual scanning, more professional appearance. Guides user through portfolio naturally.
+                </div>
+
+                <div class="priority low">LOW PRIORITY</div>
+            </div>
+        </div>
+
+        <!-- Recommendation 3 -->
+        <div class="recommendation">
+            <div class="rec-header">
+                <div class="rec-title">3. Project Card Images</div>
+                <div class="rec-tag">HIGH PRIORITY</div>
+            </div>
+            <div class="rec-content">
+                <h3>Add subtle borders/shadows to project images</h3>
+                <p>Project images currently blend with white background. Adding definition would improve visual hierarchy.</p>
+
+                <div class="comparison">
+                    <div class="before">
+                        <h4>Current</h4>
+                        <p>Images flush with white background, no definition</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #555;">✗ Weak visual separation</p>
+                    </div>
+                    <div class="after">
+                        <h4>Suggested</h4>
+                        <p>Subtle shadow: <code>0 2px 8px rgba(0,0,0,0.12)</code></p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #155724;">✓ Images "pop" from page</p>
+                    </div>
+                </div>
+
+                <div class="impact">
+                    <strong>Impact:</strong> Images appear more professional, easier to distinguish projects from background.
+                </div>
+
+                <div class="priority high">HIGH PRIORITY</div>
+            </div>
+        </div>
+
+        <!-- Recommendation 4 -->
+        <div class="recommendation">
+            <div class="rec-header">
+                <div class="rec-title">4. "Core Competencies" List</div>
+                <div class="rec-tag">MEDIUM PRIORITY</div>
+            </div>
+            <div class="rec-content">
+                <h3>Consider adding icons or bullet styling</h3>
+                <p>The competencies list is solid, but adding visual markers would make it more scannable and professional.</p>
+
+                <div class="comparison">
+                    <div class="before">
+                        <h4>Current</h4>
+                        <p>Plain text list format</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #555;">✗ Less visual interest</p>
+                    </div>
+                    <div class="after">
+                        <h4>Suggested</h4>
+                        <p>Styled bullets: ✓ or custom icons<br/>
+                        Organized in columns</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #155724;">✓ More professional layout</p>
+                    </div>
+                </div>
+
+                <div class="impact">
+                    <strong>Impact:</strong> Easier to scan, conveys more professionalism. Better use of white space.
+                </div>
+
+                <div class="priority medium">MEDIUM PRIORITY</div>
+            </div>
+        </div>
+
+        <!-- Recommendation 5 -->
+        <div class="recommendation">
+            <div class="rec-header">
+                <div class="rec-title">5. Spacing & Padding</div>
+                <div class="rec-tag">LOW PRIORITY</div>
+            </div>
+            <div class="rec-content">
+                <h3>Overall layout feels clean—maintain it</h3>
+                <p>Your current spacing is good. Just ensure:</p>
+                <ul style="margin-left: 20px; line-height: 1.8;">
+                    <li>Consistent padding between sections</li>
+                    <li>Projects section has good breathing room</li>
+                    <li>Footer content doesn't feel cramped</li>
+                </ul>
+
+                <div class="impact">
+                    <strong>✓ Doing well:</strong> The dark header, white projects section, and dark footer create excellent contrast.
+                </div>
+
+                <div class="priority low">LOW PRIORITY</div>
+            </div>
+        </div>
+
+        <!-- Recommendation 6 -->
+        <div class="recommendation">
+            <div class="rec-header">
+                <div class="rec-title">6. Call-to-Action (CTA)</div>
+                <div class="rec-tag">HIGH PRIORITY</div>
+            </div>
+            <div class="rec-content">
+                <h3>Add a contact or "Get in touch" CTA in footer</h3>
+                <p>Currently the footer is more informational. Consider adding a prominent contact option.</p>
+
+                <div class="comparison">
+                    <div class="before">
+                        <h4>Current</h4>
+                        <p>Footer has general info, no clear action</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #555;">✗ Visitor unsure next step</p>
+                    </div>
+                    <div class="after">
+                        <h4>Suggested</h4>
+                        <p>Add button: <code>"Start a Project"</code><br/>
+                        Include contact email link</p>
+                        <p style="font-size: 0.9em; margin-top: 10px; color: #155724;">✓ Clear conversion path</p>
+                    </div>
+                </div>
+
+                <div class="impact">
+                    <strong>Impact:</strong> Increases likelihood of inquiries. Professional portfolios always have clear next steps.
+                </div>
+
+                <div class="priority high">HIGH PRIORITY</div>
+            </div>
+        </div>
+
+        <hr style="margin: 50px 0; border: none; border-top: 2px solid #eee;">
+
+        <div style="background: #f0f9ff; padding: 30px; border-radius: 8px; border-left: 4px solid #1f6feb;">
+            <h2 style="color: #1f2328; margin-bottom: 15px;">Summary</h2>
+            <p style="line-height: 1.8; color: #555;">
+                Your portfolio has a <strong>solid foundation</strong>. The dark/light contrast scheme is excellent for an engineering portfolio. 
+                Main recommendations focus on <strong>visual polish</strong> (shadows, typography emphasis) and <strong>user experience</strong> 
+                (clearer CTAs, better image definition). These changes would elevate it from good to excellent.
+            </p>
+            <p style="margin-top: 15px; color: #1f6feb; font-weight: 600;">
+                👉 Prioritize: Project image shadows, section title typography, and footer CTA
+            </p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,389 @@
+<!DOCTYPE HTML>
+<!--
+	Escape Velocity by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Ghebryai Engineering</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#projects .image.featured {
+				height: 400px;
+				overflow: hidden;
+				display: block;
+			}
+			#projects .image.featured img {
+				width: 100%;
+				height: 100%;
+				object-fit: contain;
+				display: block;
+				background-color: #f0f0f0;
+			}
+
+			/* Profile image circle */
+			#about .image.featured {
+				border-radius: 50%;
+				overflow: hidden;
+				width: 500px;
+				height: 500px;
+				margin: 0 auto;
+			}
+
+			#about .image.featured img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+
+			/* Skill gallery thumbnails */
+			.skill-gallery{display:flex;gap:0.6rem;margin-top:0.9rem;flex-wrap:wrap}
+			.skill-gallery a{display:block;width:84px;height:64px;overflow:hidden;border-radius:4px;border:1px solid rgba(0,0,0,0.08)}
+			.skill-gallery img{width:100%;height:100%;object-fit:cover;display:block}
+
+			/* Consolidated skill gallery grid */
+			.gallery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0.9rem;margin-top:0.6rem}
+			.skill-item{background:#fff;border:1px solid rgba(0,0,0,0.06);border-radius:6px;overflow:hidden;text-align:center}
+			.skill-item a{cursor:pointer}
+			.skill-item img{width:100%;height:140px;object-fit:contain;display:block;background-color:#f8f8f8}
+			.skill-item figcaption{font-size:0.85rem;padding:0.45rem 0.6rem;color:#222}
+
+			/* Lightbox modal */
+			#lightbox{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:9999;align-items:center;justify-content:center}
+			#lightbox.active{display:flex}
+			#lightbox img{max-width:90%;max-height:90%;object-fit:contain}
+			#lightbox-close{position:absolute;top:20px;right:30px;color:#fff;font-size:40px;cursor:pointer;font-weight:bold}
+			#lightbox-close:hover{color:#ccc}
+
+			/* Change details button hover color to light grey */
+			.button.style1:hover {
+				background: #e0e0e0 !important;
+				color: #222 !important;
+			}
+
+			/* Center details button in projects */
+			.highlight .actions {
+				text-align: center;
+			}
+			.highlight .actions li {
+				display: inline-block;
+			}
+
+			/* Change footer section headers to white */
+			#footer .feature-list h3 {
+				color: #fff !important;
+			}
+			#footer .feature-list section h3 {
+				color: #fff !important;
+			}
+
+			/* Change Core Competencies headers to match title (white) */
+			#skills .feature-list h3 {
+				color: #222 !important;
+				color: #222 !important; /* Change Core Competencies headers to darker grey like title */
+			}
+			}
+		</style>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<section id="header" class="wrapper">
+
+					<!-- Logo -->
+					<div id="logo">
+						<h1><a href="index.html">Ghebryai Engineering</a></h1>
+						<p>Precision Mechanics & Engineering Solutions</p>
+					</div>					<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li class="current"><a href="index.html">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="projects.html">Projects</a></li>
+							<li><a href="#skills">Skills</a></li>
+							<li><a href="#footer">Contact</a></li>
+						</ul>
+					</nav>				</section>
+
+	
+			<!-- Projects -->
+			<section id="projects" class="wrapper style2">
+				<div class="title">Selected Projects</div>
+				<div class="container">
+					<div class="row aln-center">
+					<div class="col-4 col-12-medium">
+						<section class="highlight">
+							<a href="project-petg-boat.html" class="image featured"><img src="images/boat1.png" alt="PETG Boat Component" style="background-color:transparent;" /></a>
+							<h3><a href="project-petg-boat.html">Thermal–Structural Validation of a 3D Printed PETG Boat Component</a></h3>
+							<p>Coupled thermal-structural ANSYS analysis and additive manufacturing of a marine-grade 3D printed component with post-processing and surface finishing.</p>
+							<ul class="actions">
+								<li><a href="project-petg-boat.html" class="button style1">Details</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-4 col-12-medium">
+						<section class="highlight">
+							<a href="project-multiadapter.html" class="image featured"><img src="images/IMG_0274.jpeg" alt="Manufacturing of Multiadapter" style="width:100%; height:140px; object-fit:cover; display:block; margin-top:130px;" /></a>
+							<h3><a href="project-multiadapter.html">Manufacturing of Multiadapter</a></h3>
+							<p>Design and manufacturing of a precision steel fixture to prevent deformation during turning operations. Focus on manual machining, tolerance management, and practical problem-solving in a workshop environment.</p>
+							<ul class="actions">
+								<li><a href="project-multiadapter.html" class="button style1">Details</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="col-4 col-12-medium">
+						<section class="highlight">
+							<a href="project-canoe.html" class="image featured"><img src="images/canoe2.jpg" alt="Canoe Stool" style="background-color:transparent;" /></a>
+							<h3><a href="project-canoe.html">Lightweight Aluminum Canoe Stool — From FEA to Fabrication</a></h3>
+							<p>CAD modeling, FEA validation, and precision sheet metal fabrication of a lightweight aluminum canoe stool with structural optimization.</p>
+							<ul class="actions">
+								<li><a href="project-canoe.html" class="button style1">Details</a></li>
+							</ul>
+						</section>
+					</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- About -->
+				<section id="about" class="wrapper style1">
+					<div class="title">About Me</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-6 col-12-medium">
+								<p class="style1" style="font-size:1.35em; margin-bottom:0.35em;">Mechanical Engineering Student / Pro Bike Mechanic</p>
+								<p style="font-size:0.9em; color:#fff; margin-top:0.15em; margin-bottom:0.45em; margin-left:0.9em;">&bull;&nbsp;Chalmers University of Technology</p>
+								<p style="font-size:0.9em; color:#fff; margin-top:0; margin-bottom:1.1em; margin-left:0.9em;">&bull;&nbsp;Swedish National Cycling Team</p>
+								<p class="style2" style="margin-top:0.3em;">
+									I am a mechanical engineering student with <strong>strong practical and analytical skills</strong>. My background as a bicycle mechanic and interest in advanced suspension systems have given me <strong>hands-on experience with precision mechanics</strong>, which I now combine with CAD, FEA, and product design knowledge.
+								</p>
+								<p class="style3">With a unique blend of practical workshop experience and modern engineering tools, I bring both theoretical understanding and real-world problem-solving abilities to every project.</p>
+								<ul class="actions">
+									<li><a href="#projects" class="button style3">View My Work</a></li>
+								</ul>
+							</div>
+							<div class="col-6 col-12-medium">
+								<a href="#" class="image featured">
+									<img src="images/profile.jpg" alt="Profile Photo" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Skills -->
+				<section id="skills" class="wrapper style2">
+					<div class="title">Core Competencies</div>
+					<div class="container">
+						<section id="features">
+							<div class="feature-list">
+								<div class="row">
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon solid fa-cube">CAD & Design</h3>
+											<p>Advanced 3D modeling and technical drawings using industry-standard CAD tools for mechanical design and product development.</p>
+											<ul style="margin-top: 1em; margin-left: 1.5em;">
+												<li>CATIA V5</li>
+												<li>SolidWorks</li>
+											</ul>
+											<!-- per-skill thumbnails removed; consolidated gallery added below -->
+										</section>
+									</div>
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon solid fa-wave-square">FEA & Simulation</h3>
+											<p>Finite Element Analysis for structural optimization, topology studies, and parametric design validation. CAM software for advanced manufacturing simulations.</p>
+											<ul style="margin-top: 1em; margin-left: 1.5em;">
+												<li>ANSYS</li>
+												<li>CATIA V5</li>
+												<li>Creo Parametric</li>
+											</ul>
+											<!-- per-skill thumbnails removed; consolidated gallery added below -->
+										</section>
+									</div>
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon solid fa-wrench">Workshop &amp; Manufacturing</h3>
+											<p>Expert bicycle mechanics and precision manufacturing skills covering assembly, bearing service, suspension tuning, and wheel building.</p>
+											<ul style="margin-top: 1em; margin-left: 1.5em;">
+												<li>3D printing (prototype and functional parts)</li>
+												<li>Metal turning (manual lathe work)</li>
+												<li>Metal milling (manual milling)</li>
+												<li>Welding (TIG/MIG for fabrication and repairs)</li>
+											</ul>
+											<!-- per-skill thumbnails removed; consolidated gallery added below -->
+										</section>
+									</div>
+									<div class="col-6 col-12-medium">
+										<section>
+											<h3 class="icon solid fa-code">Programming</h3>
+											<p>Numerical methods and scripting for solving complex differential equations and matrix equations in mechanics and control technology.</p>
+											<ul style="margin-top: 1em; margin-left: 1.5em;">
+												<li>Python</li>
+												<li>MATLAB</li>
+											</ul>
+											<!-- per-skill thumbnails removed; consolidated gallery added below -->
+										</section>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</section>
+
+			<!-- Upcoming Projects -->
+				<section id="highlights" class="wrapper style3" style="display:none;">
+					<div class="title">Upcoming Projects</div>
+					<div class="container">
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
+									<h3><a href="#">Aliquam diam consequat</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+									<h3><a href="#">Nisl adipiscing sed lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+									<h3><a href="#">Mattis tempus lorem</a></h3>
+									<p>Eget mattis at, laoreet vel amet sed velit aliquam diam ante, dolor aliquet sit amet vulputate mattis amet laoreet lorem.</p>
+									<ul class="actions">
+										<li><a href="#" class="button style1">Learn More</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<section id="footer" class="wrapper">
+					<div class="title">Get In Touch</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+
+								<!-- Contact -->
+									<section class="feature-list small">
+										<div class="row" style="justify-content: center;">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class="icon solid fa-map-marker-alt\">Location</h3>
+													<p>
+														Gothenburg<br />
+														Sweden
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class=\"icon solid fa-comment\">Connect</h3>
+													<p>
+														<a href="https://linkedin.com/in/david-ghebryai-043137280" target="_blank" rel="noopener">linkedin.com/in/david-ghebryai</a><br />
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class=\"icon solid fa-envelope\">Email</h3>
+													<p>
+														<a href="mailto:david.ghebryai@gmail.com">david.ghebryai@gmail.com</a>
+													</p>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section>
+													<h3 class=\"icon solid fa-phone\">Phone</h3>
+													<p>
+														<a href="tel:+46700067695">+46 700 067 695</a>
+													</p>
+												</section>
+											</div>
+										</div>
+									</section>
+
+							</div>
+						</div>
+						<div id="copyright">
+							<ul style="display: flex; justify-content: center;">
+								<li>&copy; Ghebryai Engineering.</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+
+		</div>
+
+		<!-- Lightbox Modal -->
+		<div id="lightbox">
+			<span id="lightbox-close">&times;</span>
+			<img id="lightbox-img" src="" alt=""/>
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				// Lightbox functionality
+				const lightbox = document.getElementById('lightbox');
+				const lightboxImg = document.getElementById('lightbox-img');
+				const lightboxClose = document.getElementById('lightbox-close');
+				const galleryLinks = document.querySelectorAll('.gallery-link');
+
+				function openLightbox(src) {
+					lightboxImg.src = src;
+					lightbox.classList.add('active');
+					document.body.style.overflow = 'hidden';
+				}
+
+				function closeLightbox() {
+					lightbox.classList.remove('active');
+					document.body.style.overflow = 'auto';
+				}
+
+				galleryLinks.forEach(link => {
+					link.addEventListener('click', (e) => {
+						e.preventDefault();
+						openLightbox(link.getAttribute('data-src'));
+					});
+				});
+
+				lightboxClose.addEventListener('click', closeLightbox);
+
+				lightbox.addEventListener('click', (e) => {
+					if (e.target === lightbox) {
+						closeLightbox();
+					}
+				});
+
+				document.addEventListener('keydown', (e) => {
+					if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+						closeLightbox();
+					}
+				});
+			</script>
+
+	</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Preview</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .preview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .preview-box {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .preview-area {
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .label {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        /* Option 1: Linear Gradient (Top to Bottom) */
+        .linear-gradient {
+            background: linear-gradient(180deg, #1f2328 0%, #252a30 100%);
+        }
+
+        /* Option 2: Radial Gradient (Center Outward) */
+        .radial-gradient {
+            background: radial-gradient(circle at center, #2a2f37 0%, #1f2328 100%);
+        }
+
+        /* Option 3: Subtle Multi-layer with Texture */
+        .texture-gradient {
+            background: linear-gradient(135deg, #1f2328 0%, #252a30 50%, #1a1f24 100%);
+        }
+
+        /* Option 4: Deep Radial */
+        .deep-radial {
+            background: radial-gradient(ellipse at center, #2d3239 0%, #1f2328 100%);
+        }
+
+        code-block {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 4px;
+            border-left: 4px solid #1f2328;
+            margin-top: 10px;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color: #1f2328;">Background Gradient Options</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 40px;">Choose which adds the most depth and visual interest</p>
+
+        <div class="preview-grid">
+            <!-- Current (Flat) -->
+            <div class="preview-box">
+                <div class="preview-area" style="background: #1f2328;">
+                    Ghebryai Engineering
+                </div>
+                <div class="label">Current (Flat #1f2328)</div>
+            </div>
+
+            <!-- Option 1: Linear Gradient -->
+            <div class="preview-box">
+                <div class="preview-area linear-gradient">
+                    Ghebryai Engineering
+                </div>
+                <div class="label">Linear Gradient (Top→Bottom)</div>
+            </div>
+
+            <!-- Option 2: Radial Gradient -->
+            <div class="preview-box">
+                <div class="preview-area radial-gradient">
+                    Ghebryai Engineering
+                </div>
+                <div class="label">Radial Gradient (Center Out)</div>
+            </div>
+
+            <!-- Option 3: Diagonal Multi-layer -->
+            <div class="preview-box">
+                <div class="preview-area texture-gradient">
+                    Ghebryai Engineering
+                </div>
+                <div class="label">Diagonal Multi-layer</div>
+            </div>
+
+            <!-- Option 4: Deep Radial -->
+            <div class="preview-box">
+                <div class="preview-area deep-radial">
+                    Ghebryai Engineering
+                </div>
+                <div class="label">Deep Radial Ellipse</div>
+            </div>
+        </div>
+
+        <hr style="margin: 40px 0; border: none; border-top: 2px solid #ddd;">
+
+        <h2 style="color: #1f2328;">CSS Code for Each Option:</h2>
+
+        <h3>Option 1: Linear Gradient (Subtle top-to-bottom fade)</h3>
+        <code-block>background: linear-gradient(180deg, #1f2328 0%, #252a30 100%);</code-block>
+
+        <h3>Option 2: Radial Gradient (Center outward - feels centered)</h3>
+        <code-block>background: radial-gradient(circle at center, #2a2f37 0%, #1f2328 100%);</code-block>
+
+        <h3>Option 3: Diagonal Multi-layer (More dynamic)</h3>
+        <code-block>background: linear-gradient(135deg, #1f2328 0%, #252a30 50%, #1a1f24 100%);</code-block>
+
+        <h3>Option 4: Deep Radial Ellipse (Strong depth)</h3>
+        <code-block>background: radial-gradient(ellipse at center, #2d3239 0%, #1f2328 100%);</code-block>
+
+        <p style="color: #666; margin-top: 30px; line-height: 1.6;">
+            <strong>Recommendation:</strong> Option 1 (Linear) or Option 2 (Radial) are most subtle and professional. 
+            Option 3 adds more visual interest. Option 4 is the most dramatic.
+        </p>
+    </div>
+</body>
+</html>
